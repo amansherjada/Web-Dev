@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector */
+        /* div{
+            background-color: red;
+        } */
+
+        /* Class Selector */
+        .yellow{
+            background-color: yellow;
+        }
+
+        /* Id Selector */
+        #pink{
+            background-color: pink;
+        }
+
+        /* Child Selector (direct child)*/
+        div > p{
+            background-color: burlywood;
+            color: blue;
+        }
+
+        /* Descendent Selector */
+        div p{
+            background-color: rgb(0, 238, 251);
+            color: rgb(2, 4, 0);            
+        }
+        /* Universal Selector */
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        /* Psuedo Selector */
+        a:visited{
+            color: violet;
+        }
+        a:link{
+            color: red;
+        }
+        a:active{
+            background-color: red;
+        }
+        a:hover{
+            background-color: orange;
+        }
+        p:first-child{
+            background-color: forestgreen;
+        }
+    </style>
+</head>
+<body>
+    <div>This is div</div>
+    <div class="yellow">This is div</div>
+    <div id="pink">This is div</div>
+
+    <div>
+        This is div khan
+        <p>para 1 inside the div khan</p>
+        <p>para 2 inside the div khan</p>
+    </div>
+
+    <div>
+        This is div kadam
+        <article>
+            <p>para 1 inside the div kadam</p>
+            <p>para 2 inside the div kadam</p>
+        </article>
+    </div>
+
+    <a href="https://www.ufc.com/rankings">UFC Athlete Rankings</a>
+    <a href="https://www.x.com/">X</a>
+
+    <div>
+        <p>First Child</p>
+        <p>Second Child</p>
+    </div>
+</body>
+</html>
