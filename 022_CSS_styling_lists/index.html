@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Lists</title>
+    <style>
+        * {
+            margin: 10;
+            padding: 10;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        nav ul li {
+            /* list-style: none; */
+            background-color: yellow;
+            border: 2px solid black;
+            /* list-style-position: inside; include the markers also in color and border 
+        Controls whether the bullet or number appears inside or outside the list item’s content.*/
+            list-style-position: inside;
+            list-style-type: "💀";
+            /* list-style-image: url(https://media.tenor.com/RiFsK1Syap8AAAAi/css-loader.gif); */
+        }
+
+        ul li::before {
+            content: "✓";
+            /* Adds a checkmark before each list item */
+            color: green;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</body>
+
+</html>
