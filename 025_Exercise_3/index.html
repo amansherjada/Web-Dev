@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Design</title>
+    <style>
+        body {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background-color: white;
+            width: 320px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .tags {
+            margin: 15px 0;
+        }
+
+        .tags span {
+            background-color: #f0f0f0;
+            color: #777;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+            margin: 0 5px;
+        }
+
+        .card h2 {
+            margin: 15px 0;
+            font-size: 22px;
+            color: #333;
+        }
+
+        .card p {
+            color: #666;
+            font-size: 14px;
+            padding: 0 20px;
+            line-height: 1.6;
+        }
+
+        .read-more {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #e0f2ff;
+            color: #007BFF;
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        .read-more:hover {
+            background-color: #d0e8ff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <img src="wallpaper.jpg" alt="wallpaper">
+        <div class="tags">
+            <span>Wallpaper</span>
+            <span>Good</span>
+        </div>
+        <h2>Hyperbeast</h2>
+        <p>This vibrant and chaotic image features a monstrous, multi-headed creature composed of various grotesque elements.</p>
+        <a href="https://www.reddit.com/r/wallpapers/comments/n8izah/hyperbeast_4_2400x1800/" class="read-more" target="_blank">Read More</a>
+    </div>
+</body>
+
+</html>
