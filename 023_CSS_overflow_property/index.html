@@ -1,0 +1,49 @@
+<!-- https://www.codewithharry.com/tutorial/css-overflow/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow</title>
+    <style>
+        .box {
+            border: 2px solid;
+            width: 20vw;
+            height: 20vh;
+            /*overflow: auto adds scrollbar if text is overfolwing */
+            /* overflow: auto; */
+
+            /* overflow: clip; */
+
+            /*overflow: scroll; adds scrollbar even if text is not overfolwing */
+            /* overflow: scroll; */
+
+            /* Remove white-space */
+            /* white-space: nowrap; */
+
+            /* ... */
+            /* text-overflow: ellipsis; */
+
+            overflow-x: hidden; /* Hide horizontal overflow */
+            overflow-y: scroll; /* Allow vertical scrolling */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium dolor beatae nostrum aliquid inventore.
+        Alias ipsam optio nulla ducimus amet, quis laboriosam id suscipit ex sit numquam atque eos non expedita deleniti
+        repudiandae tempore ut minima commodi. Mollitia magnam quis culpa fugiat pariatur illo iure porro quae ad!
+        Perspiciatis ducimus accusamus quia assumenda quam et temporibus eius voluptatem at excepturi aliquam, debitis
+        ipsam cupiditate quis commodi laborum. Eum voluptatum reprehenderit, aliquid possimus cum quasi, corporis
+        numquam nam saepe odit, rem mollitia. Doloremque deserunt nam praesentium laborum illo. Voluptates velit at quae
+        illum voluptate aperiam adipisci, reprehenderit corrupti pariatur laudantium repudiandae accusamus, vitae
+        suscipit esse ratione. Dolore praesentium id maiores molestias cupiditate.
+    </div>
+</body>
+
+</html>
