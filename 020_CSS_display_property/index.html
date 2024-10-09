@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display property</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            border: 2px solid black;
+            /* display: inline converts block element to inline element but margin: 45px; padding: 45px width: 344px will not be adjust from the top*/
+            /* display: inline; */
+            margin: 45px;
+            padding: 45px;
+            /* display: inline-block; converts block element to inline element and also adjust margin: 45px; padding: 45px width: 344px from the top*/
+            /* display: inline; */           
+            display: inline-block;
+            width: 344px;
+        }
+
+        .box1{
+            /*display: none removes the whole content*/
+            /* display: none; */
+            
+            /*visibility: hidden; removes the content but not the space*/
+            /* visibility: hidden; */
+            
+            /*display: flex; justify-content: center; center the content of the box but in a block element format*/
+            /* display: flex; */
+            justify-content:center;
+            
+            /*display: inline-flex; justify-content: center; center the content of the box but in a inline element format*/
+            /* display: inline-flex; */
+
+            display: grid;
+        }
+    </style>
+</head>
+<body>
+    <div class="box  box1">I am a box</div>
+    <div class="box1">I am a box</div>
+    <div class="box1">I am a box</div>
+
+    <div class="box">I am a another box</div>
+
+    <span>I am a good</span>
+    <span>boy</span>
+</body>
+</html>
