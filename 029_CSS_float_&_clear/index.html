@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+
+        .image {
+            float: left;
+            margin-right: 15px;
+            border: 5px solid rgb(0, 0, 0);
+        }
+
+        .clear {
+            clear: both;
+            /* Clears both left and right floats */
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://gratisography.com/wp-content/uploads/2024/01/gratisography-cyber-kitty-1170x780.jpg" class="image"
+        alt="Example Image" width="200px">
+    <p>This text will wrap around the floated image.</p>
+    <p>This text will wrap around the floated image.</p>
+    <p>This text will wrap around the floated image.</p>
+
+    <div class="clear"></div> <!-- Clear floats before this div -->
+    <p>This paragraph will appear below the floated image, not beside it.</p>
+</body>
+
+</html>
