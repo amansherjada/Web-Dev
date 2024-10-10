@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformers</title>
+    <style>
+        .box {
+            height: 150px;
+            width: 150px;
+            background-color: aqua;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            transform: rotate(45deg);
+
+            /* transform: rotateX(45deg); */
+
+            /* transform: rotateY(45deg); */
+
+            /* transform: rotateZ(45deg); */
+
+            /* transform: scale(1.5); */
+
+            /* transform: skew(45deg); applies a skew transformation to an element, which distorts it by slanting it along the X and/or Y axis. */
+            /* transform: skew(45deg); */
+
+
+            /* transform: The property used to apply 2D or 3D transformations to an element.
+            translateY(100%): This specific transformation moves the element along the vertical axis (Y-axis).
+            100%: Means the element is moved downward by 100% of its own height. */
+            /* transform: translateY(100%); */
+
+
+            /* transform-origin: 0% 10%; specifies the point around which a transformation is applied. */
+            /* Syntax: [ <length-percentage> | left | center | right | top | bottom ] */
+            transform-origin: 0% 10%;
+        }
+
+        .container {
+            width: 80vw;
+            height: 80vh;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+</body>
+
+</html>
