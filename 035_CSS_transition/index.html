@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+        .container{
+            background-color: red;
+            width: 50vw;
+            height:40vh;
+        }
+
+        .box{
+            background-color: aquamarine;
+            width: 5vw;
+            height:4vh;
+
+            /* transition-property: transform, background-color;
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 2s; */
+
+            /* short hand of the above */
+            transition: all 3s ease-in-out 2s;
+        }
+
+        .translate{
+            transform: translateX(10vw) translateY(10vh) scale(2);
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box translate"></div>
+    </div>
+</body>
+</html>
