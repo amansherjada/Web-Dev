@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: rgb(56, 250, 185);
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            /* Stick the nav at the top */
+            z-index: 100;
+            /* Ensure the nav stays above other content */
+        }
+
+        .nav ul {
+            list-style: none;
+            border: 2px solid black;
+            display: flex;
+            background-color: rgb(182, 254, 230);
+            border-radius: 15px;
+        }
+
+        .nav ul li {
+            margin: 8px;
+            padding: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            padding: 10px;
+            /* margin: 10px; */
+            justify-content: center;
+        }
+
+        .item {
+            border: 2px solid black;
+            height: 900px;
+            width: 500px;
+            margin: 5px;
+            background-color: rgb(182, 254, 230);
+            padding: 10px;
+        }
+
+        .item h2 {
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        ::selection {
+            color: aqua;
+            background-color: black;
+        }
+
+        .img {
+            position: fixed;
+            bottom: 10px;
+            right: 2vw;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+        }
+
+        .foot {
+            border: 2px solid black;
+            width: 69vw;
+            height: 60px;
+            text-align: center;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            /* Centers horizontally */
+            align-items: center;
+            /* Centers vertically */
+            background-color: rgb(182, 254, 230);
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="nav">
+        <ul>
+            <li>
+                <a href="https://www.google.com" target="_blank">
+                    <img src="googleimg.png" alt="google" width="45px">
+                </a>
+            </li>
+            <li><a href="https://youtu.be/IumYMCllMsM?si=XwD2WK1Zs5NHDSb8&t=11" target="_blank">Home</a></li>
+            <li><a href="https://www.youtube.com/watch?v=tGv7CUutzqU" target="_blank">About</a></li>
+            <li><a href="https://www.youtube.com/watch?v=xikQkSdt9fI" target="_blank">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="item">
+            <img src="aleximg.png" alt="" width="500px">
+            <h2>Alex Pereira</h2>
+            <p>Alex Sandro Silva Pereira (born 7 July 1987) is a Brazilian professional mixed martial artist and former
+                kickboxer. He currently competes in the Light Heavyweight division of the Ultimate Fighting Championship
+                (UFC), where he is the current UFC Light Heavyweight Champion and a former UFC Middleweight Champion.
+            </p>
+        </div>
+
+        <div class="item">
+            <img src="islamimg.png" alt="" width="500px">
+            <h2>Islam Makhachev</h2>
+            <p>Islam Ramazanovich Makhachev (Russian: Ислам Рамазанович Махачев; born 27 October 1991) is a Russian
+                professional mixed martial artist and former sambo competitor. He currently competes in the Lightweight
+                division of the Ultimate Fighting Championship (UFC), where he is the current UFC Lightweight Champion.
+            </p>
+        </div>
+    </div>
+
+    <div class="img">
+        <a href="https://www.google.com" target="_blank">
+            <img src="googleimg.png" alt="google" width="70px">
+        </a>
+    </div>
+
+    <footer>
+        <div class="foot">
+            &copy; Copyrights 2023-2024 All right reserved
+        </div>
+    </footer>
+</body>
+
+</html>
