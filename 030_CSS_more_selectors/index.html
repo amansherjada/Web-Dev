@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* The first .box element in its parent (boxes) will have a red background and white text. */
+        .box:first-child {
+            background-color: red;
+            color: white;
+        }
+
+        /* Selects the first line of the .box class */
+        /* .box::first-line{
+            color: blueviolet;
+        } */
+
+        /* Selects all the elements in the .boxes class */
+        /* .boxes *{
+            color: coral;
+        } */
+
+        /* Attribute selector */
+        [data-color="primary"] {
+            margin-top: 20px;
+            border: 2px solid purple;
+        }
+
+        /* Grouping */
+        span,
+        p,
+        a {
+            border: 2px solid black;
+        }
+
+        .box:nth-child(2) {
+            background-color: rgb(129, 129, 248);
+        }
+
+        .box:nth-child(odd) {
+            padding: 30px;
+            text-align: center;
+        }
+
+        /* .box:nth-last-child(1) {
+            background-color: aqua;
+        } */
+
+        /* ::before inserts content before the .boxes element's content. */
+        .boxes::before {
+            content: "This will print before";
+        }
+
+        /* ::after inserts content after the .boxes element's content. */
+        .boxes::after {
+            content: "This will print after";
+            color: red;
+            background-color: black;
+        }
+
+        /* The ::selection pseudo-element is used to style the part of the web page that the user 
+        highlights or selects (usually by clicking and dragging the mouse). */
+        ::selection {
+            color: aqua;
+            background-color: black;
+        }
+
+        .box::first-letter {
+            font-size: 30px;
+            color: chartreuse;
+        }
+
+
+        input::placeholder {
+            color: coral;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div class="box">Hey I am box Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio optio dolores hic
+            odit adipisci eaque, voluptatum reprehenderit pariatur debitis excepturi deserunt totam sapiente fugit
+            possimus ea. Minus odit sed deleniti! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat,
+            quia? Nihil dolorem quo quos necessitatibus dolorum sint adipisci rem. Cumque saepe consequatur, impedit
+            quibusdam expedita illo sequi quis numquam earum.</div>
+        <div class="box">Hey I am box</div>
+        <div data-color="primary" class="box">Hey I am box</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dicta molestiae nam. Assumenda dicta
+            deserunt dignissimos iusto! Quis pariatur deleniti temporibus? Enim porro voluptatem quod obcaecati beatae
+            maiores cupiditate laudantium non saepe. Blanditiis eaque accusamus temporibus libero dolor nemo molestiae
+            accusantium optio quod non sed praesentium harum, iste similique doloribus.</p>
+
+        <a href="https://www.google.com" target="_blank">Google</a>
+
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati culpa, ipsum assumenda voluptates
+            odit, consequatur iste necessitatibus qui aliquid recusandae, sapiente reprehenderit voluptate tempore! Ad
+            id officiis, labore ratione voluptas eum quis beatae corporis repellendus, totam quos sequi provident? Modi
+            excepturi incidunt praesentium quia odit perspiciatis veritatis hic repellat culpa.</span>
+
+
+    </div>
+
+    <input type="text" placeholder="Enter your text">
+</body>
+
+</html>
