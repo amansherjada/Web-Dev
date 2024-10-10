@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            border: 2px solid black; /* Adds a solid black border around the container */
+
+            display: flex; /* Defines the container as a flexbox, enabling flex properties for child items */
+
+            height: 80vh; /* Sets the container height to 80% of the viewport height (viewport height unit) */
+
+            /* justify-content: center; */
+            /* Aligns flex items along the main axis (horizontally in row direction) and centers them */
+
+            align-items: center;
+            /* Aligns flex items along the cross axis (vertically in row direction) to the center */
+
+            /* flex-direction: column; */
+            /* Changes the direction of flex items from row (default) to column (stacked vertically) */
+
+            /* flex-direction: column-reverse; */
+            /* Stacks flex items vertically in reverse order */
+
+            flex-wrap: wrap;
+            /* Allows flex items to wrap onto multiple lines if they don't fit in one row (useful for responsive designs) */
+
+            align-content: center;
+            /* Aligns the rows of flex items to the center of the container when there's extra space along the cross axis (vertical axis in this case) */
+
+            /* There is no justify-items in flexbox */
+            /* `justify-items` is not applicable to flexbox, as it's used in grid layouts */
+
+            flex-flow: row wrap;
+            /* Shorthand for `flex-direction` and `flex-wrap`. In this case, it sets flex items to flow in a row and wrap onto new lines when necessary */
+
+            /* gap: 30px; */
+            /* column-gap: 10px; */
+            /* row-gap: 40px; */
+            /* Set spacing between items in the row and column directions. */
+
+            /* gap: row column; Syntax: <'row-gap'> <'column-gap'> */
+            gap: 40px 10px;
+            /* Sets the gap between flex items: 40px vertical (row gap) and 10px horizontal (column gap) */
+        }
+
+        .item {
+            height: 60px;
+            width: 60px;
+            background-color: aqua;
+            border: 2px solid red;
+            margin: 5px;
+            /* text-align: center; */
+            /* flex-grow: 1; */
+            /* flex-shrink: 2; */
+        }
+
+        .item1{
+            align-self: flex-start;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="item item1">Box</div>
+            <div class="item">Box</div>
+            <div class="item">Box</div>
+            <div class="item">Box</div>
+            <div class="item">Box</div>
+            <div class="item">Box</div>
+            <div class="item">Box</div>
+            <div class="item">Box</div>
+            <div class="item">Box</div>
+            <div class="item">Box</div>
+            <div class="item">Box</div>
+            <div class="item">Box</div>
+            <div class="item">Box</div>
+            <div class="item">Box</div>
+
+        </div>
+    </main>
+</body>
+
+</html>
