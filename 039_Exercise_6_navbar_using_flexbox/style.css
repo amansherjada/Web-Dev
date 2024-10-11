@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.img{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    gap: 400px; /* Default gap for desktop */
+    flex-flow: row wrap;
+}
+
+.img ul{
+    list-style: none;
+    display: flex; /* Keep the list items horizontal */
+}
+
+.img ul li a{
+    margin: 0px 20px;
+}
+
+/* Media query for tablets (around 820px width) */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .img {
+        gap: 100px; /* Reduce the gap for tablets */
+    }
+
+    .img ul li a{
+        margin: 0px 15px; /* Adjust spacing between list items */
+    }
+}
+
+/* Media query for smaller screens (like phones) */
+@media (max-width: 768px) {
+    .img {
+        gap: 10px; /* Reduce the gap between the logo and the list for phones */
+        justify-content: space-between; /* Adjust the alignment to ensure elements are closer */
+        padding: 0 10px; /* Add a bit of padding to the container */
+    }
+
+    .img ul {
+        flex-direction: row; /* Ensure the list remains horizontal */
+        justify-content: center; /* Center the list */
+    }
+
+    .img ul li a {
+        margin: 0px 8px; /* Reduce spacing between list items */
+    }
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
