@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters</title>
+    <style>
+        /* https://developer.mozilla.org/en-US/docs/Web/CSS/filter */
+        /* img{
+            filter: blur(1px);
+        } */
+
+        .img1{
+            filter: brightness(150%) contrast(1);
+        }
+        .img2{
+            /* filter: sepia(100%); */
+            /* filter: invert(); */
+            filter: opacity(0.7);
+        }
+        .img3{
+            filter: drop-shadow(16px 16px 20px red);
+            /* filter: invert(); */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="img1" src="https://gratisography.com/wp-content/uploads/2023/10/gratisography-witch-cat-1170x780.jpg" alt="witch cat">
+        <img src="https://bloodyelbow.com/wp-content/uploads/1/2024/09/GettyImages-2159892320-1536x1024.jpg" alt="Alex Pereira" class="img2">
+        <img src="https://library.sportingnews.com/styles/crop_style_16_9_desktop/s3/2022-07/GettyImages-1406455709.jpg?itok=DKSZdvF-" alt="Volk" class="img3">
+    </div>
+</body>
+</html>
