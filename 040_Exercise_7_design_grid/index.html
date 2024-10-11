@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 7</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            align-items: center;
+            justify-content: center;
+        }
+
+        .imgg {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        main .download {
+            display: grid;
+            grid-template-columns: 300px 300px 300px;
+            grid-template-rows: 220px 220px 220px;
+            width: 98vw;
+            justify-content: center;
+            align-items: center;
+            column-gap: 44px;
+            row-gap: 44px;
+        }
+
+        /* Add border to all grid items */
+        .download div {
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+            /* Stack items vertically */
+            justify-content: center;
+            align-items: center;
+            height: 26vh;
+            background-color: rgb(249, 234, 234);
+            border-radius: 5px;
+        }
+
+        /* Style the Download link as a button */
+        .download div a {
+            display: inline-block;
+            margin-top: 80px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        /* Add small font size for grid items */
+        .download div p {
+            font-size: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <span class="imgg">
+            <img src="loggo.png" alt="img" width="65px">
+            <h4>Download UltraEdit v2024.1(released 2024-08-27) | Hotfix information (2024-08-18)</h4>
+        </span>
+        <div class="download">
+            <div class="item-1">
+                <h4>English</h4>
+                <a href="spacedesk_driver_Win_10_64_v2123.msi">Download</a> <!-- Download button below English -->
+            </div>
+            <div class="item-2">
+                <h4>Deutsch</h4>
+                <a href="spacedesk_driver_Win_10_64_v2123.msi">Download</a> <!-- Download button below English -->
+            </div>
+            <div class="item-3">
+                <h4>Italiano</h4>
+                <a href="spacedesk_driver_Win_10_64_v2123.msi">Download</a> <!-- Download button below English -->
+            </div>
+            <div class="item-4">
+                <h4>Español</h4>
+                <a href="spacedesk_driver_Win_10_64_v2123.msi">Download</a> <!-- Download button below English -->
+            </div>
+            <div class="item-5">
+                <h4>français</h4>
+                <a href="spacedesk_driver_Win_10_64_v2123.msi">Download</a> <!-- Download button below English -->
+            </div>
+            <div class="item-6">
+                <h4>Português brasileiro
+                </h4>
+                <a href="spacedesk_driver_Win_10_64_v2123.msi">Download</a> <!-- Download button below English -->
+            </div>
+            <div class="item-7">
+                <h4>日本</h4>
+                <a href="spacedesk_driver_Win_10_64_v2123.msi">Download</a> <!-- Download button below English -->
+            </div>
+            <div class="item-8">
+                <h4>한국어</h4>
+                <a href="spacedesk_driver_Win_10_64_v2123.msi">Download</a> <!-- Download button below English -->
+            </div>
+            <div class="item-9">
+                <h4>中国</h4>
+                <a href="spacedesk_driver_Win_10_64_v2123.msi">Download</a> <!-- Download button below English -->
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
