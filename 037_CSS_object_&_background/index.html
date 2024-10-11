@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object-fit & background</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            background-color: aqua;
+            height: 634px;
+            width: 688px;
+
+            /* This is not a element it is a background image */
+            background-image: url("https://gratisography.com/wp-content/uploads/2023/10/gratisography-witch-cat-1170x780.jpg");
+
+            background-position: center center;
+
+            /* background-blend-mode: screen; */
+
+
+            /* If image is smaller then the container it background-repeat repeats the image and no-repeat does not repeats the image*/
+            /* background-repeat: no-repeat;
+            background-repeat:repeat-y; */
+
+            /* background-clip: padding-box; */
+
+            /* https://developer.mozilla.org/en-US/docs/Web/CSS/background */
+        }
+
+        img {
+            height: 634px;
+            width: 688px;
+            object-fit: cover;
+
+            /* object-position: top right; */
+            /* object-position: top left; */
+            /* object-position: 10px 20px; */
+
+            /* object-fit: contain; */
+
+            /* object-fit: fill; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p style="color: white;">This text will be visible over the background image</p>
+        <!-- <img src="https://img.freepik.com/free-photo/lone-tree_181624-46361.jpg?w=996&t=st=1728641555~exp=1728642155~hmac=72b0b536755e79c26208b363ac53e0cd948aa545c7ca0415376f263c06f880ae"
+            alt="img"> -->
+    </div>
+</body>
+
+</html>
