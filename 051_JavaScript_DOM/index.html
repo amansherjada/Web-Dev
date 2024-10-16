@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Document Object Model</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+    <script>
+        document.title = "This is gooood"
+        console.log(document.title)
+        console.log(document.body)
+        document.body.style.backgroundColor = "green";
+    </script>
+</body>
+</html>
+
+<!--  
+The JavaScript Document Object Model (DOM) is a programming interface that allows you to interact with and manipulate the structure and content of a webpage. 
+
+It represents the page as a tree of objects, where each part of the HTML document (like elements, attributes, and text) becomes an object you can modify using JavaScript.
+
+Key Points:
+Tree Structure: The webpage is structured like a tree, where each HTML element is a "node" (like <div>, <p>, etc.). 
+The document object represents the whole page.
+
+Accessing Elements: You can use JavaScript to select and change elements on the page.
+
+Example: document.getElementById('header') selects an element with the id of "header."
+
+Modifying Content: You can change text, styles, or even add and remove elements dynamically.
+
+Example: document.getElementById('header').textContent = 'New Title'; changes the text of the element with id='header'.
+Event Handling: You can use the DOM to respond to user actions like clicking a button or typing in a form.
+
+Example: document.getElementById('btn').addEventListener('click', () => alert('Button Clicked!')); adds an event listener to a button.
+In simple terms, the DOM lets JavaScript control the content, style, and behavior of a webpage in real-time.
+-->
