@@ -1,0 +1,20 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "testing",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "test",
+    "18-10-2024"
+  ],
+  "author": "Aman",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1",
+    "slugify": "^1.6.6"
+  }
+}
