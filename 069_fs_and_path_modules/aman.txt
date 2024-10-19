@@ -1,0 +1,1 @@
+Created using writeFileSync Adding text using appendFile() Adding text using appendFile() Adding text using appendFile()
