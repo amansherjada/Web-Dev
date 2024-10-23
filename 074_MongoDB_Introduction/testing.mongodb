@@ -1,0 +1,66 @@
+// Select the database to use.
+use('amanplayground');
+
+// Insert a few documents into the sales collection.
+db.getCollection('courses').insertMany([
+{
+    _id: "6718855d461af552798f2198",
+    name: "Java",
+    Price: 20000,
+    Instructor: "Rahim"
+  },
+  {
+    _id: "6718855d461af552798f2199",
+    name: "Python",
+    Price: 15000,
+    Instructor: "Asif"
+  },
+  {
+    _id: "6718855d461af552798f219a",
+    name: "C++",
+    Price: 18000,
+    Instructor: "Karim"
+  },
+  {
+    _id: "6718855d461af552798f219b",
+    name: "JavaScript",
+    Price: 12000,
+    Instructor: "Nasim"
+  },
+  {
+    _id: "6718855d461af552798f219c",
+    name: "C#",
+    Price: 22000,
+    Instructor: "Jamil"
+  },
+  {
+    _id: "6718855d461af552798f219d",
+    name: "PHP",
+    Price: 10000,
+    Instructor: "Habib"
+  },
+  {
+    _id: "6718855d461af552798f219e",
+    name: "Ruby",
+    Price: 17000,
+    Instructor: "Saif"
+  },
+  {
+    _id: "6718855d461af552798f219f",
+    name: "Go",
+    Price: 25000,
+    Instructor: "Fahim"
+  },
+  {
+    _id: "6718855d461af552798f21a0",
+    name: "Swift",
+    Price: 19000,
+    Instructor: "Kamil"
+  },
+  {
+    _id: "6718855d461af552798f21a1",
+    name: "Kotlin",
+    Price: 16000,
+    Instructor: "Nadim"
+  }
+]);
