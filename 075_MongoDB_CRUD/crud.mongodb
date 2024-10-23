@@ -1,0 +1,95 @@
+use("crudDB")
+
+// console.log(db)
+
+// Create
+db.createCollection("courses")
+
+// db.courses.insertOne({
+//     name: "RamLAL Love course",
+//     price: 0,
+//     assignments: 12,
+//     projects: 21
+// })
+
+// db.courses.insertMany([
+//     {
+//         "name": "Beginner's Guide to Python",
+//         "price": 50,
+//         "assignments": 15,
+//         "projects": 5
+//     },
+//     {
+//         "name": "Advanced JavaScript Workshop",
+//         "price": 120,
+//         "assignments": 18,
+//         "projects": 10
+//     },
+//     {
+//         "name": "Introduction to AI and ML",
+//         "price": 75,
+//         "assignments": 20,
+//         "projects": 12
+//     },
+//     {
+//         "name": "Full-Stack Web Development",
+//         "price": 180,
+//         "assignments": 25,
+//         "projects": 15
+//     },
+//     {
+//         "name": "Digital Marketing Mastery",
+//         "price": 95,
+//         "assignments": 10,
+//         "projects": 7
+//     },
+//     {
+//         "name": "Basic HTML and CSS Course",
+//         "price": 30,
+//         "assignments": 8,
+//         "projects": 3
+//     },
+//     {
+//         "name": "Data Visualization with Python",
+//         "price": 110,
+//         "assignments": 12,
+//         "projects": 9
+//     },
+//     {
+//         "name": "Creative Writing Workshop",
+//         "price": 40,
+//         "assignments": 5,
+//         "projects": 2
+//     },
+//     {
+//         "name": "Financial Analysis Fundamentals",
+//         "price": 150,
+//         "assignments": 17,
+//         "projects": 11
+//     },
+//     {
+//         "name": "Cybersecurity Essentials",
+//         "price": 90,
+//         "assignments": 14,
+//         "projects": 8
+//     }
+// ])
+
+// Read
+// db.courses.find({price: 120})
+
+// db.courses.findOne({price: 120})
+
+// db.courses.find({price: 90}).count()
+
+// db.courses.find({price: 90}).toArray()
+
+// Update
+// db.courses.updateOne({price:100}, {$set: {price: 90}})
+
+// Delete
+db.courses.deleteMany({price:90})
+// {
+//   "acknowledged": true,
+//   "deletedCount": 2
+// }
