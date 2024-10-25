@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(177, 231, 231);
+}
+
+nav, ul{
+    display: flex;
+}
+
+li{
+    list-style: none;
+}
+
+ul{
+    gap: 34px;
+}
+
+nav{
+    background-color: antiquewhite;
+    padding: 10px;
+}
