@@ -99,5 +99,3 @@ export default function HomePage() {
 ### Summary
 
 **Server Components in Next.js** allow you to **render parts of your app on the server**, reducing the amount of JavaScript that needs to be sent to the client. They’re ideal for **static content** and **data-heavy processing**, while **Client Components** handle dynamic interactivity. By combining both, you can achieve a **highly performant** and **lightweight application**.
-
-Hope this helps! Let me know if you need any more clarity or examples.
