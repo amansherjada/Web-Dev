@@ -1,5 +1,7 @@
 # What is Middleware?
 
+Docs = https://nextjs.org/docs/app/building-your-application/routing/middleware
+
 **Middleware** is like a bridge that connects two different parts of an application or system. It’s code that runs between receiving a request from the client (like a user visiting a website) and the server sending back a response (like loading a webpage). Think of it as a checkpoint that can inspect, modify, or block a request before it reaches its destination.
 
 In simple terms, middleware:
