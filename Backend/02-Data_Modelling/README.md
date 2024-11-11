@@ -1,3 +1,5 @@
+# Data modeling
+
 Data modeling in backend development involves defining the structure, rules, and relationships of the data used by an application. In the context of MongoDB, Mongoose is a popular JavaScript library that simplifies this process by providing a schema-based solution for defining and managing data in MongoDB, a NoSQL database.
 
 ### What is Mongoose?
